@@ -17,10 +17,12 @@
 # sino que va hasta el anterior
 
 inicio = int(input('Ingrese el primero número de la secuencia\n'))
-# fin....
+fin = int(input('Ingrese el ultimo número de la secuencia\n')) # fin....
 
+suma = 0
 # for ... in range(....)
-
-# Imprimir el valor de la sumatoria
+for numero in range(inicio,fin+1):
+    suma += numero     # sumatoria = sumatoria + numero
+    print("número = ", numero, "sumatoria =", suma) # Imprimir el valor de la sumatoria
 
 print("terminamos!")

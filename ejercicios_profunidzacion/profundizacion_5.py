@@ -78,3 +78,53 @@ hacer un bosquejo del sistema ya que deberá utilizar 3 bucles en total,
 
 print("Mi primer pasito en data analytics")
 # Empezar aquí la resolución del ejercicio
+while True:
+    lista_palabras = []
+    palabra_mayor = None
+    palabras_letras = None
+    print( "Menú: opciones")
+    print("""
+    Dime, ¿Como quieres ordenar las palabras?
+    
+    1 - Obtener la palabra más grande por orden alfabético 
+    2 - Obtener la palabra más grande por cantidad de letras 
+    3 - Salir del programa
+    """)
+    opcion = int(input("Ingrese la opcion:\n")) 
+
+    if opcion == 1:
+        print("Ingrese la cantidad de palabras que desea evaluar")
+        cantidad_palabras = int(input())
+
+        for i in range(cantidad_palabras):
+            print('Ingrese las palabras', i+1)  
+            palabra =str(input())
+            lista_palabras.append(palabra)
+            print("La lista creada es:", lista_palabras)
+
+        for palabra in lista_palabras:
+            if (palabra_mayor == None) or (palabra_mayor < palabra):
+                palabra_mayor = palabra
+                print( "La palabra mas grande por orden alfabetico es:", palabra_mayor)
+
+    elif opcion == 2:
+        print("Ingrese la cantidad de palabras que desea evaluar")
+        cantidad_palabras = int(input())
+
+        for i in range(cantidad_palabras):
+            print('Ingrese las palabra', i+1)  
+            palabra =str(input())
+            lista_palabras.append(palabra)
+            print("La lista creada es:", lista_palabras)
+
+        for palabra in lista_palabras:
+            if (palabras_letras == None) or (len(palabras_letras)) < len(palabra):
+                palabras_letras = palabra
+                print( "La palabra mas grande por cantidad de letras es:", palabras_letras)
+
+    elif opcion == 3:
+        print( "Salir de Programa ")
+        break
+
+    else:
+        print (" Error volver a ingresar valor ")
