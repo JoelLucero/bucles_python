@@ -97,7 +97,7 @@ while True:
         cantidad_palabras = int(input())
 
         for i in range(cantidad_palabras):
-            print('Ingrese las palabras', i+1)  
+            print('Ingrese la palabra', i+1)  
             palabra =str(input())
             lista_palabras.append(palabra)
             print("La lista creada es:", lista_palabras)
@@ -112,7 +112,7 @@ while True:
         cantidad_palabras = int(input())
 
         for i in range(cantidad_palabras):
-            print('Ingrese las palabra', i+1)  
+            print('Ingrese la palabra', i+1)  
             palabra =str(input())
             lista_palabras.append(palabra)
             print("La lista creada es:", lista_palabras)
